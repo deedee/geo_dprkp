@@ -76,7 +76,7 @@ loaders = TEMPLATES[0]['OPTIONS'].get('loaders') or ['django.template.loaders.fi
 # loaders.insert(0, 'apptemplates.Loader')
 TEMPLATES[0]['OPTIONS']['loaders'] = loaders
 TEMPLATES[0].pop('APP_DIRS', None)
-
+SECURE_REFERRER_POLICY = "no-referrer-when-downgrade"
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
